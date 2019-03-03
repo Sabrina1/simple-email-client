@@ -1,0 +1,101 @@
+#from, #subject {
+    display: inline;
+    margin-left: 5px;
+}
+#message, .message{
+    border: 1px solid black;
+    padding: 15px;
+    min-height: 150px;
+}
+.subject-container, .from-container, .to-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid black;
+    padding-left: 15px;
+}
+
+.tablink {
+    background-color: #eee;
+    float: left;
+    border: 1px solid gray;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+}
+
+#tabs-container{
+    display: flex;
+}
+
+.messagePreview {
+    padding: 15px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.messagePreview div:first-child{
+    display: inline-block;
+    width: 260px;
+}
+
+.messagePreview div:nth-child(2){
+    display: inline-block;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.selectedTab{
+    background-color: #00aeef61;
+}
+
+.hidden { 
+    display: none; 
+}
+
+#createMessage .to-container input, #createMessage .subject-container input{
+    margin-left: 10px;
+    height: 25px;
+    font-size: 13px;
+}
+
+.to-container input {
+    width: 242px;
+}
+.subject-container input {
+    width: 210px;
+}
+
+#createMessage textarea {
+    width: 98%;
+    font-size: 13px;
+    display: block;
+    resize: none;
+    padding: 3px 5px 70px 10px;
+}
+
+#createMessage .message{
+    position: relative;
+}
+
+.tablink:hover, .messagePreview:hover {
+    background-color: #6f6d6d9c;
+}
+
+.messagePreview:hover {
+    background-color: #d8d8d8;
+}
+
+.send-button {
+    border: 1px solid darkgray;
+    position: absolute;
+    font-size: 14px;
+    width: 81px;
+    right: 25px;
+    margin-top: 10px;
+    height: 31px;
+    background: #58c3ea
+}

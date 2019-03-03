@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Email Client</title>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />  
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div id="tabs-container">
+		<button id="linkTab" class="tablink selectedTab" onclick="reloadInbox()">List</button>
+		<button id="createTab" class="tablink " onclick="createMessage()" >Create</button>
+	</div>
+
+	<div id="mailBox">
+	</div>
+
+	<div id="messageContent" class="hidden">
+		<div class="from-container"><strong>From:</strong><div id="from"></div></div>
+		<div class="subject-container"><strong>Subject:</strong><div id="subject"></div></div>
+		<div id="message"></div>
+	</div>
+
+	<div id="createMessage" class="hidden">
+	 	<div class="to-container"><strong>To:</strong><input id="recepient" type="text" /></div>
+	 	<div class="subject-container"><strong>Subject:</strong><input id="textbox" type="text" /></div>
+	 	<div class="message">
+			<textarea placeholder="Type your message here"></textarea>
+			<button type="submit" class="send-button" onclick="sendMessage()">SEND</button>
+	 	</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
