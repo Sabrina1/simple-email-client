@@ -1,7 +1,7 @@
 displayEmails();
 
 function reloadInbox() {
-  location.reload();
+	location.reload();
 }
 
 function displayEmails(){
